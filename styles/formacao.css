@@ -1,0 +1,100 @@
+@import url('/styles/_var.css');
+
+/* LIMPANDO FORMATAÇÕES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-font1);
+}
+
+/* FORMATAÇÃO GERAL */
+body{
+    background-image: url('/assets/img/backgroung.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* CURSOS */
+.container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: var(--cor-fundo);
+    border-radius: 25px;
+    padding: 1.5rem;
+
+}
+
+.box{
+    position: relative;
+    min-width: 250px;
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.cursos-descricao{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    padding: 1rem;
+    border-bottom-left-radius:25px ;
+    border-bottom-right-radius:25px ;
+    background: var(--cor-fundo2);
+    box-shadow: var(--sombra);
+}
+
+.lista-cursos{
+    list-style: none;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main{
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* AREA DE CONTEÚDO */
+.content-area{
+    justify-content: center;
+    display: flex;
+    padding: 1.5rem;
+    background: var(--cor-fundo);
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+/* SECTION STACK */
+.lista-stack{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap:10px;
+}
+
+.lista-stack li{
+    padding: 0.3rem;
+    border-radius: 10px;
+    background: var(--cor-fundo2);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px){
+    main{
+        width: 90%;
+    }
+}

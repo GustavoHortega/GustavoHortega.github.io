@@ -1,0 +1,7 @@
+:root{
+    --cor-fundo:linear-gradient(rgb(31, 22, 36) 25%, rgba(41, 41, 41, 1) 100%);
+    --cor-fundo2:linear-gradient(rgb(65, 65, 65) 25%, rgb(39, 39, 39) 100%);
+    --cor-font1:#e3e3e3;
+    --sombra: 0px 0px 5px #00000070;
+    --fonte1: calibri;
+}

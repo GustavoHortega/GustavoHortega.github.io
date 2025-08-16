@@ -1,0 +1,83 @@
+@import url("/styles/_var.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-font1);
+}
+
+/* FORMATAÇÃO GERAL */
+body {
+    background-image: url('/assets/img/backgroung.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: var(--cor-fundo);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TITULOS */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* FORMULÁRIO */
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    background: #313131;
+}
+
+input{
+    margin-bottom: 1rem ;
+}
+
+/* BOTÃO */
+button {
+    background: var(--cor-fundo2);
+    box-shadow: var(--sombra);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #8b00a3;
+}
+
+fieldset{
+    border: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 780px){
+    main{
+        margin: 0 25px;
+    }
+}

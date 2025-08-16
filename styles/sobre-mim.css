@@ -1,0 +1,142 @@
+@import url('/styles/_var.css');
+
+/* LIMPANDO FORMATAÇÃO */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FORMATAÇÃO GERAL */
+body{
+    background-image: url('/assets/img/backgroung.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+/* CONFIGURANDO GRID */
+.container{ 
+    margin: auto;
+    width: 65%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 2fr;
+    grid-template-areas: 
+        "info descricao"
+        "info hobbies";
+    gap: 25px;
+    padding: 10px;
+}
+
+.info{
+    grid-area: info;
+}
+
+.descricao{
+    grid-area: descricao;
+}
+
+.hobbies{
+    grid-area: hobbies;
+}
+
+/* AREA DE CONTEÚDO */
+.area{
+    background: var(--cor-fundo);
+    border-radius: 25px;
+    padding: 20px;
+    color: var(--cor-font1);
+    box-shadow: 0px 0px 5px #00000070;
+}
+
+/* SESSÃO HOBBIES */
+#hobbies-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    gap: 30px;
+}
+
+.icons{
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+    transition: 1s;
+}
+
+.icons:hover{
+    transform: scale(130%);
+}
+
+/* ASIDE INFO */
+#info-content{
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-info{
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+}
+
+.foto-perfil{
+    margin: 0 auto;
+}
+
+#info-list{
+    margin: auto;
+    list-style: none;
+    margin-top: 3rem;
+}
+
+#info-list li{
+    margin-bottom: 0.5rem;
+}
+
+#site{
+    text-decoration: none;
+}
+
+#site:visited{
+    text-decoration: none;
+    color: var(--cor-font1);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 860px){
+
+    body{
+        background-size:auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    #hobbies-content{
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .icons{
+        padding:0.5rem;
+    }
+
+
+}
